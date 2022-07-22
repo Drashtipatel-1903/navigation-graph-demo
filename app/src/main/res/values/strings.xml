@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NavigationComponentWithRecycvlerviewDemo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat_fragment">Chat Fragment</string>
+    <string name="dashboard_fragment">Dashboard Fragment</string>
+    <string name="movie_fragment">Movie Fragment</string>
+    <string name="video_fragment">Video Fragment</string>
+    <string name="android">Android</string>
+    <string name="comedy_movies">Comedy Movies</string>
+    <string name="Documentory_Movies">Documentory Movies</string>
+    <string name="drama_movies">Drama Movies</string>
+    <string name="horror_movies">Horror Movies</string>
+    <string name="kids_show">Kids Show</string>
+    <string name="new_movies">New Release Movies</string>
+    <string name="sports">Sports</string>
+    <string name="thriller_movies">Thriller Movies</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="movie_description">Movie Description</string>
+</resources>

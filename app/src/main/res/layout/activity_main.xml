@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.MainActivity"
+        android:id="@+id/drawer_layout"
+        tools:openDrawer="start">
+
+        <include layout="@layout/appbar_layout" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <nl.joery.animatedbottombar.AnimatedBottomBar
+                android:id="@+id/bottom_bar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorBottomNav"
+                android:elevation="5dp"
+                app:abb_badgeTextColor="#fff"
+                app:abb_indicatorAppearance="square"
+                app:abb_indicatorColor="@android:color/white"
+                app:abb_indicatorHeight="5dp"
+                app:abb_indicatorMargin="0dp"
+                app:abb_selectedIndex="1"
+                app:abb_iconSize="24dp"
+                app:abb_selectedTabType="text"
+                app:abb_tabColor="@color/white"
+                app:abb_tabs="@menu/bottomnav_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:menu="@menu/nav_menu"
+            android:layout_gravity="start"
+            android:id="@+id/nav_id"
+            app:headerLayout="@layout/nav_header" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

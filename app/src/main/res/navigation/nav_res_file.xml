@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_res_file"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.crm.navigationcomponentwithrecycvlerviewdemo.fragments.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.crm.navigationcomponentwithrecycvlerviewdemo.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.crm.navigationcomponentwithrecycvlerviewdemo.fragments.MovieFragment"
+        android:label="fragment_movie"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.crm.navigationcomponentwithrecycvlerviewdemo.fragments.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+</navigation>

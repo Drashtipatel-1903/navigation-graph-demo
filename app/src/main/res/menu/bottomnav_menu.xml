@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Dashboard"
+            android:contentDescription="Dashboard"
+            android:id="@+id/dashboardFragment"
+            android:icon="@drawable/home" />
+
+        <item android:title="Chat"
+            android:id="@+id/chatFragment"
+            android:icon="@drawable/chat"/>
+
+        <item android:title="Movie"
+            android:id="@+id/movieFragment"
+            android:icon="@drawable/movie"/>
+
+        <item android:title="Video"
+            android:id="@+id/videoFragment"
+            android:icon="@drawable/video"/>
+
+
+    </group>
+</menu>
